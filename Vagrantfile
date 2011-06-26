@@ -22,7 +22,7 @@ Vagrant::Config.run do |config|
     end
     n.vm.provision :shell, :path => "scripts/chef-client.sh"
   end
-  (0..2).each do |x|
+  2.times do |x|
     config.vm.define "node#{x}.vm" do |n|
       n.vm.box = @box
       n.vm.host_name = "node#{x}.vm"
