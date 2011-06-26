@@ -7,7 +7,7 @@
     desc "Build #{flavor}"
     task flavor do
       [ :build, :export, :destroy ].each do |command|
-        `bundle exec vagrant basebox #{command} #{flavor}`
+        sh "bundle exec vagrant basebox #{command} #{flavor}"
       end
     end
   end
