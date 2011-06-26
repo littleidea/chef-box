@@ -12,5 +12,3 @@ if [ ! -f /etc/chef/client.pem ]; then
         fi
     done
 fi
-
-exit 0

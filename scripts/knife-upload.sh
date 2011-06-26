@@ -13,5 +13,3 @@ if [ -d /vagrant/roles/ ]; then
         sudo -u vagrant knife role from file $x
     done
 fi
-
-exit 0

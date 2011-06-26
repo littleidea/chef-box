@@ -43,5 +43,3 @@ chown -R chef:chef /etc/chef /var/lib/chef /var/log/chef
 chown -R rabbitmq:rabbitmq /etc/rabbitmq /var/lib/rabbitmq /var/log/rabbitmq
 chown -R couchdb:couchdb /etc/couchdb /var/lib/couchdb /var/log/couchdb
 rm -rf /etc/chef/client.pem /var/lib/rabbitmq/* /var/lib/couchdb/*
-
-exit 0

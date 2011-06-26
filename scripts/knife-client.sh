@@ -18,5 +18,3 @@ cookbook_path ["#{dir}/../cookbooks", "/vagrant"]
 ' | sudo -u vagrant tee ~/.chef/knife.rb
     rsync -r ~/.chef/ /etc/chef/validation.pem /vagrant/.chef/
 fi
-
-exit 0
