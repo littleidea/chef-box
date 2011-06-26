@@ -1,0 +1,34 @@
+#+Title:Chef Box
+#+AUTHOR:Tim Dysinger
+#+EMAIL:tim@dysinger.net
+#+DATE:2011-03-26
+
+* About
+  Chef Images for Vagrant
+
+* Requirements
+  - [[http://www.virtualbox.org/wiki/Downloads][VirtualBox]] 4.0.8
+  - [[http://rvm.beginrescueend.com/][RVM]] latest
+
+* Install
+  #+BEGIN_SRC: sh
+gem install bundler
+bundle install
+  #+END_SRC
+
+* Build
+  #+BEGIN_SRC: sh
+rake box:all
+  #+END_SRC
+
+* Launch
+  #+BEGIN_SRC: sh
+vagrant up
+  #+END_SRC
+
+* Knife
+  (From Host or Guest)
+  #+BEGIN_SRC: sh
+knife node list
+knife search node "*:*"
+  #+END_SRC
