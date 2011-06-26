@@ -1,0 +1,4 @@
+*flymake*
+/.vagrant
+/iso
+*.box
