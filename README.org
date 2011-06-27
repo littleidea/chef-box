@@ -28,7 +28,7 @@ rake box:natty64
 
   Example: Build All Boxes
   #+BEGIN_SRC: sh
-rake box:natty64
+rake box:all
   #+END_SRC
 
 * Launch
