@@ -1,12 +1,7 @@
-#+Title:Chef Box
+#+Title:Chef Box: Ubuntu Chef Images for Vagrant
 #+AUTHOR:Tim Dysinger
 #+EMAIL:tim@dysinger.net
 #+DATE:2011-06-26
-
-* About
-
-  Chef Images for Vagrant
-  License [[LICENSE][Apache 2]]
 
 * Requirements
 
@@ -66,3 +61,5 @@ knife search node "name:node*.vm"
     #+BEGIN_SRC: sh
 knife ssh "*:*" "date" -a ip -x vagrant -i .ssh/id_rsa --no-host-key-verify
     #+END_SRC
+
+* License [[LICENSE][Apache 2]]
