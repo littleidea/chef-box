@@ -34,13 +34,14 @@ bundle install
 
 * Build
 
-  Example: Build a Natty 64bit Box (Warning: Build a Vagrant Box takes
-  about 20 minutes on my i7 MacBook Pro - go get some lunch & come
-  back)
+  Example: Build a Natty 64bit Box
 
   #+BEGIN_SRC: sh
 rake box:natty64
   #+END_SRC
+
+  Warning: Building a Vagrant Box takes about 20 minutes on my i7
+  MacBook Pro - go get some lunch & come back
 
   Example: Build a LTS Lucid 32bit Box
 
@@ -48,12 +49,15 @@ rake box:natty64
 rake box:lucid32
   #+END_SRC
 
-  Example: Build All Boxes (Warning: Takes a couple hours to build 32
-  & 64 bit boxes for Lucid, Maverick & Natty)
+  Example: Build All Boxes
 
   #+BEGIN_SRC: sh
 rake box:all
   #+END_SRC
+
+  Warning: Takes several hours to build 32 & 64 bit boxes for Lucid,
+  Maverick & Natty - do it an night when you wont be tapping your
+  foot.
 
 * Launch
 
