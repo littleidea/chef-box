@@ -1,11 +1,24 @@
-#+Title:Chef Box
+#+Title:Chef Box: Ubuntu Chef Images for Vagrant
 #+AUTHOR:Tim Dysinger
 #+EMAIL:tim@dysinger.net
 #+DATE:2011-06-26
 
-* About
+This project enables you to automatically build a complete set of
+[[http://www.ubuntu.com/][Ubuntu]] [[http://vagrantup.com][Vagrant]] Boxes for use with [[http://vagrantup.com][Vagrant]].  The boxes are built with
+the [[http://wiki.opscode.com/display/chef/Package%2BInstallation%2Bon%2BDebian%2Band%2BUbuntu][Official OpsCode Chef 0.10 Ubuntu Packages]] baked in.  This means
+you can start either a Chef Server or Client Node easily at boot time.
 
-  Chef Images for Vagrant
+Also included in this project is the Vagrant scaffolding to launch a
+Chef cluster on your Desktop.  The default 'vagrant up' starts a Chef
+Server & 2 Chef Client Nodes.  The nodes are setup to automatically
+join the Chef cluster.  You can practice your cookbook, search, knife
+and shef skills really easily with 3 disposable nodes.  See the
+examples below for more info.
+
+You can also merge the contents of this project into your existing
+[[https://github.com/opscode/chef-repo][Chef Repo]] and record, as an artifact in your git repository, how you
+built your Vagrant Box instead of it being mystery-meat from the
+interweb cache.
 
 * Requirements
 
@@ -65,3 +78,5 @@ knife search node "name:node*.vm"
     #+BEGIN_SRC: sh
 knife ssh "*:*" "date" -a ip -x vagrant -i .ssh/id_rsa --no-host-key-verify
     #+END_SRC
+
+* License [[LICENSE][Apache 2]]
