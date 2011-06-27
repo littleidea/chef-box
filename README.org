@@ -1,4 +1,4 @@
-#+Title:Chef Box: Ubuntu Chef Images for Vagrant
+#+Title:Chef Box: Chef Vagrant Boxes & Playground
 #+AUTHOR:Tim Dysinger
 #+EMAIL:tim@dysinger.net
 #+DATE:2011-06-26
