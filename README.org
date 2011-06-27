@@ -35,11 +35,19 @@ bundle install
 * Build
 
   Example: Build a Natty 64bit Box
+
   #+BEGIN_SRC: sh
 rake box:natty64
   #+END_SRC
 
+  Example: Build a LTS Lucid 32bit Box
+
+  #+BEGIN_SRC: sh
+rake box:lucid32
+  #+END_SRC
+
   Example: Build All Boxes
+
   #+BEGIN_SRC: sh
 rake box:all
   #+END_SRC
