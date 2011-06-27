@@ -14,7 +14,7 @@ client_key "#{dir}/vagrant.pem"
 chef_server_url "http://172.16.172.16:4000"
 cache_type "BasicFile"
 cache_options :path => "#{dir}/checksums"
-cookbook_path ["#{dir}/../cookbooks", "/vagrant"]
+cookbook_path ["#{dir}/../cookbooks", "/vagrant/cookbooks"]
 ' | sudo -u vagrant tee /home/vagrant/.chef/knife.rb
     chmod -R o-rwx /home/vagrant/.chef
     rsync -vac /home/vagrant/.chef/ /etc/chef/validation.pem /vagrant/.chef/
