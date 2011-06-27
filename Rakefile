@@ -7,6 +7,7 @@ namespace :box do
       ( @flavors ||= [] ) << flavor
       desc "Build #{flavor}"
       task flavor do
+        begin sh "rm -f #{flavor}.box" ; rescue ; end
         [ :build, :export, :destroy ].each do |command|
           sh "bundle exec vagrant basebox #{command} #{flavor}"
         end

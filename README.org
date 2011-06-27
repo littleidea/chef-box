@@ -4,9 +4,9 @@
 #+DATE:2011-06-26
 
 This project enables you to automatically build a complete set of
-[[http://www.ubuntu.com/][Ubuntu]] [[http://vagrantup.com][Vagrant]] Boxes for use with [[http://vagrantup.com][Vagrant]].  The boxes are built with
-the [[http://wiki.opscode.com/display/chef/Package%2BInstallation%2Bon%2BDebian%2Band%2BUbuntu][Official OpsCode Chef 0.10 Ubuntu Packages]] baked in.  This means
-you can start either a Chef Server or Client Node easily at boot time.
+[[http://www.ubuntu.com/][Ubuntu]] boxes for use with [[http://vagrantup.com][Vagrant]].  The boxes are built with the
+[[http://wiki.opscode.com/display/chef/Package%2BInstallation%2Bon%2BDebian%2Band%2BUbuntu][Official OpsCode Chef 0.10 Ubuntu Packages]] baked in.  This means you
+can start either a Chef Server or Client Node easily at boot time.
 
 Also included in this project is the Vagrant scaffolding to launch a
 Chef cluster on your Desktop.  The default 'vagrant up' starts a Chef
