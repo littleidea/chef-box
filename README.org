@@ -46,7 +46,8 @@ rake box:natty64
 rake box:lucid32
   #+END_SRC
 
-  Example: Build All Boxes
+  Example: Build All Boxes (Warning: Takes a couple hours to build 32
+  & 64 bit boxes for Lucid, Maverick & Natty)
 
   #+BEGIN_SRC: sh
 rake box:all
