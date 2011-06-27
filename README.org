@@ -54,13 +54,19 @@ rake box:all
 
 * Launch
 
-  Example: 1 Chef Server & 2 Chef Client Nodes (default)
+  Example: Launch a 3-Node Natty64 Cluster
 
   #+BEGIN_SRC: sh
 vagrant up
   #+END_SRC
 
-  Example: 1 Chef Server & 1 Chef Client Node
+  Example: Launch a 3-Node Lucid32 Cluster
+
+  #+BEGIN_SRC: sh
+BOX=lucid32 vagrant up
+  #+END_SRC
+
+  Example: Only 1 Chef Server & 1 Chef Client Node
 
   #+BEGIN_SRC: sh
 vagrant up chef.vm
