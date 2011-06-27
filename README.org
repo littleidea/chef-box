@@ -1,34 +1,67 @@
 #+Title:Chef Box
 #+AUTHOR:Tim Dysinger
 #+EMAIL:tim@dysinger.net
-#+DATE:2011-03-26
+#+DATE:2011-06-26
 
 * About
+
   Chef Images for Vagrant
 
 * Requirements
+
   - [[http://www.virtualbox.org/wiki/Downloads][VirtualBox]] 4.0.8
   - [[http://rvm.beginrescueend.com/][RVM]] latest
 
-* Install
+* Setup
+
   #+BEGIN_SRC: sh
 gem install bundler
 bundle install
   #+END_SRC
 
 * Build
+
+  Example: Build a Natty 64bit Box
   #+BEGIN_SRC: sh
-rake box:all
+rake box:natty64
+  #+END_SRC
+
+  Example: Build All Boxes
+  #+BEGIN_SRC: sh
+rake box:natty64
   #+END_SRC
 
 * Launch
+
+  Example: 1 Chef Server & 2 Chef Client Nodes (default)
   #+BEGIN_SRC: sh
 vagrant up
   #+END_SRC
 
-* Knife
-  (From Host or Guest)
+  Example: 1 Chef Server & 1 Chef Client Node
   #+BEGIN_SRC: sh
-knife node list
-knife search node "*:*"
+vagrant up chef.vm
+vagrant up node0.vm
   #+END_SRC
+
+* Knife
+
+*** Node
+    Example: Works Anywhere (Host or Guest)
+    #+BEGIN_SRC: sh
+knife node list
+knife node show chef.vm
+    #+END_SRC
+
+*** Search
+    Example: Works Anywhere (Host or Guest)
+    #+BEGIN_SRC: sh
+knife search node "name:chef*.vm"
+knife search node "name:node*.vm"
+    #+END_SRC
+
+*** SSH
+    Example: Works Anywhere (Host or Guest)
+    #+BEGIN_SRC: sh
+knife ssh "*:*" "date" -a ip -x vagrant -i .ssh/id_rsa --no-host-key-verify
+    #+END_SRC
