@@ -34,7 +34,9 @@ bundle install
 
 * Build
 
-  Example: Build a Natty 64bit Box
+  Example: Build a Natty 64bit Box (Warning: Build a Vagrant Box takes
+  about 20 minutes on my i7 MacBook Pro - go get some lunch & come
+  back)
 
   #+BEGIN_SRC: sh
 rake box:natty64
