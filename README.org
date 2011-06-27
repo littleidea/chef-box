@@ -47,26 +47,21 @@ vagrant up node0.vm
 * Knife
 
 *** Node
-    Example: Works Anywhere
+    Example: Works Anywhere (Host or Guest)
     #+BEGIN_SRC: sh
 knife node list
 knife node show chef.vm
     #+END_SRC
 
 *** Search
-    Example: Works Anywhere
+    Example: Works Anywhere (Host or Guest)
     #+BEGIN_SRC: sh
 knife search node "name:chef*.vm"
 knife search node "name:node*.vm"
     #+END_SRC
 
 *** SSH
-    Example: From the Host
+    Example: Works Anywhere (Host or Guest)
     #+BEGIN_SRC: sh
 knife ssh "*:*" "date" -a ip -x vagrant -i .ssh/id_rsa --no-host-key-verify
-    #+END_SRC
-
-    Example: From Any Vagrant Guest
-    #+BEGIN_SRC: sh
-knife ssh "*:*" "date" -a ip --no-host-key-verify
     #+END_SRC
