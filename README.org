@@ -56,7 +56,7 @@ rake box:all
   #+END_SRC
 
   Warning: Takes several hours to build 32 & 64 bit boxes for Lucid,
-  Maverick & Natty - do it an night when you wont be tapping your
+  Maverick & Natty - do it at night when you wont be tapping your
   foot.
 
 * Launch
