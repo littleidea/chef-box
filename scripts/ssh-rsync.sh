@@ -1,5 +1,6 @@
 #!/bin/bash -ex
 
 # ssh rsync
-chown -R vagrant:vagrant ~/.ssh
-sudo -u vagrant rsync -vauc /vagrant/.ssh/ ~/.ssh/
+rsync -vac /vagrant/.ssh/ /home/vagrant/.ssh/
+chown -R vagrant:vagrant /home/vagrant/.ssh
+chmod -R go-rwsx /home/vagrant/.ssh
