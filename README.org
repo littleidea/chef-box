@@ -11,9 +11,9 @@ you can start either a Chef Server or Client Node easily at boot time.
 Also included in this project is the Vagrant scaffolding to launch a
 Chef cluster on your Desktop.  The default 'vagrant up' starts a Chef
 Server & 2 Chef Client Nodes.  The nodes are setup to automatically
-join to the Chef cluster.  You can practice your cookbook, search &
-knife skills really easily with 3 disposable nodes.  See the examples
-below for more info.
+join the Chef cluster.  You can practice your cookbook, search, knife
+and shef skills really easily with 3 disposable nodes.  See the
+examples below for more info.
 
 You can also merge the contents of this project into your existing
 [[https://github.com/opscode/chef-repo][Chef Repo]] and record, as an artifact in your git repository, how you
