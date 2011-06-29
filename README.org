@@ -22,7 +22,7 @@ interweb cache.
 
 * Requirements
 
-  - [[http://www.virtualbox.org/wiki/Downloads][VirtualBox]] 4.0.8
+  - [[http://www.virtualbox.org/wiki/Downloads][VirtualBox]] 4.0.10
   - [[http://rvm.beginrescueend.com/][RVM]] latest
 
 * Setup
@@ -108,4 +108,6 @@ knife search node "name:node*.vm"
 knife ssh "*:*" "date" -a ip -x vagrant -i .ssh/id_rsa --no-host-key-verify
     #+END_SRC
 
+* Changelog
+*** 0.5 Works with VirtualBox 4.0.10. Rebuild your VMS.
 * License [[LICENSE][Apache 2]]

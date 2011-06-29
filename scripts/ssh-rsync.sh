@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # ssh rsync
 rsync -vac /vagrant/.ssh/ /home/vagrant/.ssh/

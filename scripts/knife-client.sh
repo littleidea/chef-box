@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # knife
 if [ ! -f /home/vagrant/.chef/knife.rb ]; then
