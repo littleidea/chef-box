@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # knife rsync
 rsync -vac /vagrant/.chef/ /home/vagrant/.chef/

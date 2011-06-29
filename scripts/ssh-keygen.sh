@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # ssh keygen
 if [ ! -f /home/vagrant/.ssh/id_rsa ]; then

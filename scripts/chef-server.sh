@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 if [ ! -f /etc/chef/client.pem ]; then
     perl -p -i -e 's/localhost/172.16.172.16/g' /etc/chef/server.rb

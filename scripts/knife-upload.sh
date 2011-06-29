@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # upload
 if [ -d /vagrant/cookbooks/ ]; then

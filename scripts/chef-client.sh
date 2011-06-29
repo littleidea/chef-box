@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/bash -eux
 
 # chef client
 perl -p -i -e 's/localhost/172.16.172.16/g' /etc/chef/client.rb
