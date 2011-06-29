@@ -26,7 +26,7 @@ wget -O - http://apt.opscode.com/packages@opscode.com.gpg.key |\
     apt-key add -
 apt-get update
 echo "
-chef chef/chef_server_url string http://127.0.0.1:4000
+chef chef/chef_server_url string http://localhost:4000
 chef-server-webui chef-server-webui/admin_password string ub3rs3kr4t
 chef-solr chef-solr/amqp_password string ub3rs3kr4t
 " | debconf-set-selections
